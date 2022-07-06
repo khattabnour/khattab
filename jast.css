@@ -1,0 +1,214 @@
+.continur{
+    margin: -16px 20px;
+    padding: 10px;
+
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(231, 226, 219);
+    color: rgb(167, 38, 232);
+    padding: 0px;
+    position: sticky;
+    top: 2px;
+    z-index: 1000;
+}
+.nav img{
+    width: 25px;
+}
+.main img{
+    width: 80px;
+   
+}
+.show{
+    direction: rtl;
+    width: calc(100vw - 100px);
+    z-index: 5;
+}
+.nav .show .list ul li:hover{
+   border-bottom: 2px solid blueviolet;
+   padding-bottom: 5px;
+}
+.nav .show .list ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+}
+.nav .show .list ul li{
+   list-style-type: none;
+   margin: 0px 25px;
+   width: 100%;
+   padding: 7px;
+   margin: 8px;
+   text-align: center;
+
+}
+.show img{
+    display: none;
+}
+.backet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    width: 80%;
+    display: grid;
+    grid-template-columns:60% 40%;
+    border-radius:25px ;
+    background-color:rgb(231, 226, 219);
+    margin: 25px;
+    padding: 25px;
+    -webkit-border-radius:25px ;
+    -moz-border-radius:25px ;
+    -ms-border-radius:25px ;
+    -o-border-radius:25px ;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+   
+}
+.card:nth-child(even){
+    direction: rtl;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+    }
+    
+    .hobbies{
+       display: flex;
+       flex-direction: row;
+       justify-content:space-evenly;
+       flex-wrap: wrap;
+       text-align: center;
+       background-color:rgba(231, 226, 219, 0.548) ;
+       padding: 2vw;
+    }
+    .hobbies .in{
+        margin: 20px;
+        background-color:rgb(233, 228, 222) ;
+        width: 400px;
+        padding: 10px;
+    }
+    body{
+        color: rgb(167, 38, 232);
+        }
+        .wasef{
+            direction: ltr;
+            color: rgb(167, 38, 232);
+            font-weight: bold;
+            font-style: italic;
+            font-variant: unset;
+            overflow: auto;
+        }
+
+        
+#about{
+    background-color: rgb(231, 226, 219);
+    text-align: center;
+    padding: 15px;
+    margin: 15px 0px;
+    font-style: italic;
+    font-weight: bolder;
+    color: blueviolet;
+}
+svg{
+    width: 100%;
+    height: 400px;
+    }
+svg circle{
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke: blueviolet;
+      stroke-width: 25px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 750;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s ease-in-out;
+  }
+  .khattab .zft{
+      transition: 2s;
+      -webkit-transition: 2s;
+      -moz-transition: 2s;
+      -ms-transition: 2s;
+      -o-transition: 2s;
+}
+  .khattab .zft:nth-child(1) :hover  circle {
+    stroke-dashoffset: calc( 750 - (750 * 77)/100);
+  }
+  .khattab .zft:hover {
+    transform: translateY(-15px);
+  }
+  .khattab .zft:nth-child(2) :hover  circle {
+    stroke-dashoffset: calc( 750 - (750 * 90)/100);
+  }
+  .khattab .zft:nth-child(3) :hover  circle {
+    stroke-dashoffset: calc( 750 - (750 * 85)/100);
+  }
+  #Education{
+      background-color: rgb(231, 226, 219);
+      padding: 10px;
+      margin: 20px;
+      border-radius: 15px;
+     
+  }
+
+#about img{
+width: 200px;
+border-radius: 50%;
+}
+.khattab{
+   text-align: center;
+    display:flex;
+    gap: 15px;
+    /*grid-template-columns: repeat(5l,minmax(300px ,1fr));*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.khattab>div{
+    background-color: rgb(231, 226, 219);
+    border-radius: 10px;
+   
+}
+@media  (max-width:600px ) {
+    .show img{
+        display: block;
+    }
+    .show{
+        margin: 15px;
+    }
+    .nav .show .list ul li{
+        height: 20px;
+    }
+     .continur .nav .list{
+        display: none;
+    }
+    .nav .show .list ul{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .show:hover .list {
+        display:block;
+    }
+}
+@media (max-width:1200px) {
+    .card{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:60% 40%;
+    }
+    .card img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+
